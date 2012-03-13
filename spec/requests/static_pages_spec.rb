@@ -11,7 +11,7 @@ describe "Static pages" do
     
     it "should have the right title" do
     visit '/static_pages/home'
-    page.should have_selector('title', :text => "Meetume | Home")
+    page.should have_selector('title', :text => "Meetume")
   end
   end
 
@@ -40,4 +40,17 @@ describe "Static pages" do
        page.should have_selector('title', :text => "Meetume | About Us")
      end
      end
+     
+  describe "Contact page" do
+
+        it "should have the content 'Contact'" do
+        visit '/static_pages/contact'
+        page.should have_content('Contact')
+          end
+          
+      it "should have the right title" do
+      visit '/static_pages/contact'
+      page.should have_selector('title', :text => "Meetume | Contact")
    end
+end
+end
