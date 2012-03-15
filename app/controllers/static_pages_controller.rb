@@ -10,4 +10,23 @@ class StaticPagesController < ApplicationController
   
   def contact
   end
+  
+  def posts
+  end
+  
+  def meetups
+  end
+  
+  def chat
+  end
+  
+  def groups
+  end
+  
+  def people
+  end
+  
+  def profile
+  end
+  
 end

@@ -3,6 +3,12 @@ Meetumea::Application.routes.draw do
   match '/help', to: "static_pages#help"
   match '/about', to: "static_pages#about"
   match '/contact', to: "static_pages#contact"
+  match '/posts', to: "static_pages#posts"
+  match '/meetups', to: "static_pages#meetups"
+  match '/chat', to: "static_pages#chat"
+  match '/groups', to: "static_pages#groups"
+  match '/people', to: "static_pages#people"
+  match '/profile', to: "static_pages#profile"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
