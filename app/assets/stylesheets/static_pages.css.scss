@@ -1,3 +1,111 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#heading {
+	background-color: #2374ee;
+}
+
+#inheading {
+	width:950px; 
+	margin:auto;
+}
+	#meetume {
+	font-size: 40px;
+	margin-left:20px;
+	color: #FFF;
+	font-family: myriad pro;
+}
+
+	#city {
+	font-size: 60px;
+	margin-left: 20px;
+	color: #FFF;
+	font-family: myriad pro;
+}
+
+#login{
+	float:left;
+	left:500px;
+	top:15px;
+	color: #FFF;
+}
+
+	#emailcss{
+	float:left;
+	float:right;
+	margin-left:400px;
+	position:absolute;
+	top:21px;
+	font-family: myriad pro;
+}
+
+	#passwordcss{
+	float:left;
+	float:right;
+	margin-left:400px;
+	position:absolute;
+	top:48px;
+	font-family: myriad pro;
+}
+
+	#emailboxcss{
+	margin-left:470px;
+	float:left;
+	position:absolute;
+	top:17px;
+}
+
+	#passboxcss{
+	margin-left:470px;
+	float:left;
+	position:absolute;
+	top:44px; 
+}
+
+
+	#loginbutton{
+	margin-left:471px;
+	float:left;
+	position:absolute;
+	top:73px;
+}
+
+	#signupbutton{
+	float:left;
+	position:absolute;
+	margin-left:700px;
+	top:26px;
+}
+
+#navigation {
+	top:10px;
+	position: relative;
+	width:950px; 
+	margin:auto;
+	left: 40px;
+}
+
+	#streambutton {
+		float:left;
+	}
+	
+	#postsbutton {
+		float:left;
+	}
+	
+	#meetupsbutton {
+		float:left;
+	}
+	
+	#chatbutton {
+		float:left;
+	}
+	
+	#groupsbutton {
+		float:left;
+	}
+	
+	#peoplebutton {
+		float:left;
+	}
+	
+	#profilebutton {
+		float:left;
+	}
