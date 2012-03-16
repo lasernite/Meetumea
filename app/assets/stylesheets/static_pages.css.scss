@@ -58,21 +58,6 @@
 	top:44px; 
 }
 
-
-	#loginbutton{
-	margin-left:450px;
-	float:left;
-	position:absolute;
-	top:73px;
-}
-
-	#signupbutton{
-	float:left;
-	position:absolute;
-	margin-left:700px;
-	top:26px;
-}
-
 #navigation {
 	top:10px;
 	position: relative;
@@ -83,6 +68,36 @@
 
 .origin {
 	float:left;
+}
+
+#loginbutton {
+margin-left:450px;
+position:absolute;
+top:73px;
+float:left;
+display: block;
+width: 125px;
+height:83px;
+background-image: url(/login-button.png);
+}
+
+#loginbutton:hover {
+background-image: url(/loginlime.png);
+}
+
+#signupbutton {
+position:absolute;
+margin-left:700px;
+top:26px;
+float:left;
+display: block;
+width: 300px;
+height:83px;
+background-image: url(/join-free.png);
+}
+
+#signupbutton:hover {
+background-image: url(/joinlime.png);
 }
 
 	#streambutton {
