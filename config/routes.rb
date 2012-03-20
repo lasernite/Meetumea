@@ -1,4 +1,6 @@
 Meetumea::Application.routes.draw do
+  resources :users
+  
   match '/join', to: "users#new"
 
   root to: "static_pages#home"
