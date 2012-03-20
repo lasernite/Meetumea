@@ -1,7 +1,11 @@
 Meetumea::Application.routes.draw do
   resources :users
-  
+  resources :sessions, only: [:new, :create, :destroy]
+
   match '/join', to: "users#new"
+  match '/login',  to: 'sessions#new'
+  match '/logout', to: 'sessions#destroy', via: :delete
+  
 
   root to: "static_pages#home"
   match '/help', to: "static_pages#help"

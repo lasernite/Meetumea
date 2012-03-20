@@ -2,18 +2,21 @@
 		
 		<div id="inheading">
 			
-	<div id="meetume">Meetume</div>
+	<div id="meetume"><a href="/">Meetume</a></div>
 	
 	<div id="city">Fairfield, IA</div>
 	
 	<div id="login">
-		<form action="login">
-	<div id="emailcss">Email</div>
-	<div id="emailboxcss"><input type="text" name="email"/></div><br>
-	<div id="passwordcss">Password</div>
-	<div id="passboxcss"><input type="password" name="password"></div>
-	</form>
-	<div id="loginbutton"><a href="/login"><input type="image" src="/blank.png" width="125" height="48"></a></div>
+	  <%= form_for(:session, :url => sessions_path) do |f| %>
+
+	      <div id="emailcss"><%= f.label :email %></div>
+	      <div id="emailboxcss"><%= f.text_field :email %></div>
+
+	     <div id="passwordcss"> <%= f.label :password %></div>
+	      <div id="passboxcss"><%= f.password_field :password %></div>
+	
+	      <div id="loginbutton"><%= f.submit "Login", :class => "btn btn-large btn-primary", :type => "image", :src => "/blank.png", :width =>"125", :height => "48"%></div>
+	    <% end %>
 	</div>
 	
 	<div id="joinbutton"><a href="/join"><input type="image" src="/blank.png" width="300" height="83"></a></div>
@@ -21,3 +24,5 @@
 	</div>
 	
 </div>
+
+	
