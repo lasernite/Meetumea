@@ -1,3 +1,10 @@
+	
+	
+<% if logged_in? %>
+
+<h1><%= link_to "Logout", logout_path, method: "delete" %></h1>
+
+<% else %>	
 	<div id="heading">
 		
 		<div id="inheading">
@@ -24,5 +31,7 @@
 	</div>
 	
 </div>
+
+<% end %>
 
 	
