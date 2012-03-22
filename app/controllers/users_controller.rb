@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Welcome to Meetume, your online community!"
-      redirect_to @user
+      redirect_to '/profile'
     else
       render 'new'
     end

@@ -1,3 +1,20 @@
+<% if logged_in? %>
+<a href="/"><input type="image" src="/stream.png" width="135" height="41"></a>
+<a href="/posts"><input type="image" src="posts.png" width="135" height="41"></a>
+<a href="/meetups"><input type="image" src="/meetups.png" width="135" height="41"></a>
+<a href="/chat"><input type="image" src="/chat.png" width="135" height="41"></a>
+<a href="/groups"><input type="image" src="/groups.png" width="135" height="41"></a>
+<a href="/people"><input type="image" src="/people.png" width="135" height="41"></a>
+<a href="/profile"><input type="image" src="/profile.png" width="135" height="41"></a>
+<% provide(:title, @user.name) %>
+
+	      <h1>
+	         
+			<%= gravatar_for @user %>
+	        <%= @user.name %>
+	      </h1>
+<% else %>
+
 <% provide(:title, 'Profile')%>
 
 <div id="navigation">	
@@ -9,3 +26,5 @@
 		<div id="peoplebutton"><a href="/people"><input type="image" src="/blank.png" width="135" height="41"></a></div>
 		<div class="origin"><a href="/profile"><input type="image" src="/profilelime.png" width="135" height="41"></a></div>
 		</div>
+		
+<% end %>		

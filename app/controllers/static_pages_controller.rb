@@ -27,6 +27,7 @@ class StaticPagesController < ApplicationController
   end
   
   def profile
+    @user = User.find_by_remember_token(cookies[:remember_token])
   end
   
 end

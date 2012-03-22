@@ -6,7 +6,6 @@ Meetumea::Application.routes.draw do
   match '/login',  to: 'sessions#new'
   match '/logout', to: 'sessions#destroy', via: :delete
   
-
   root to: "static_pages#home"
   match '/help', to: "static_pages#help"
   match '/about', to: "static_pages#about"
