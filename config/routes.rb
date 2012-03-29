@@ -1,6 +1,8 @@
 Meetumea::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  
+  match '/profile/info', to: "users#info"
 
   match '/join', to: "users#new"
   match '/login',  to: 'sessions#new'

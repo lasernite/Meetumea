@@ -1,0 +1,14 @@
+<% if logged_in? %>
+<h1>
+     
+	<%= gravatar_for @user %>
+    <%= @user.name %>
+  </h1>
+
+<%= link_to "Wall" %>
+<%= link_to "Web" %>
+<a href="/profile/info">Info</a>
+<%= link_to "Photos" %>
+<%= link_to "Edit", edit_user_path(current_user) %>
+<% else %>
+<% end %>
