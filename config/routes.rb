@@ -2,6 +2,7 @@ Meetumea::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   
+  match '/users', to: "users#index"
   match '/profile/info', to: "users#info"
 
   match '/join', to: "users#new"
@@ -16,7 +17,7 @@ Meetumea::Application.routes.draw do
   match '/meetups', to: "static_pages#meetups"
   match '/chat', to: "static_pages#chat"
   match '/groups', to: "static_pages#groups"
-  match '/people', to: "static_pages#people"
+  match '/web', to: "static_pages#web"
   match '/profile', to: "static_pages#profile"
 
   # The priority is based upon order of creation:
