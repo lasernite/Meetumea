@@ -1,13 +1,13 @@
 								/* Logged In Header */
 
 #logoutbutton {
-margin-left: 900px;
+margin-left: 914px;
 position: relative;
 bottom: 20px;
 }
 
 #search {
-	margin-left: 20px;
+	margin-left: 23px;
 	margin-top:9px;
 	float:left;
 }
@@ -26,7 +26,6 @@ position: relative;
 
 #meetumehead {
 font-size: 40px;
-margin-left:20px;
 color: #FFF;
 font-family: myriad pro;
 float:left;
@@ -35,32 +34,34 @@ margin-top:6px;
 
 #settings {
 	float:left;
-	left:20px;
+	left:40px;
 	top:12px;
 	position:relative;
 }
 
 #messages {
 	float:left;
-	left:24px;
+	left:44px;
 	top:12px;
 	position:relative;
 }
 
 #activity {
 float:left;
-left:28px;
+left:48px;
 top:12px;
 position:relative;
 }
 
 #profile {
-left:32px;
+left:52px;
 top:12px;
 position:relative;
 }
 
 									/* Everything Else */
+									
+					
 
 #heading {
 	background-color: #2374ee;
@@ -124,11 +125,13 @@ position:relative;
 }
 
 #navigation {
-	top:10px;
 	position: relative;
 	width:950px; 
 	margin:auto;
-	left: 40px;
+}
+
+#subnavigation {
+	float:left;
 }
 
 .origin {
@@ -247,4 +250,17 @@ background-image: url(/peoplelime.png);
 	
 	#profilebutton:hover {
 	background-image: url(/profilelime.png);
+}
+
+
+#community {
+float:left;
+position:relative;
+bottom: 17px;
+}
+
+#bottombuttons{
+	float:left;
+	position:relative;
+	left:20px;
 }
