@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :logged_in_user, only: [:edit, :update]
+  before_filter :logged_in_user, only: [:index, :edit, :update]
   before_filter :correct_user, only: [:edit, :update]
   
   def new
@@ -26,6 +26,10 @@ class UsersController < ApplicationController
   
   def info
     @user = User.find_by_remember_token(cookies[:remember_token])
+  end
+  
+  def index
+    @users = User.all
   end
   
   def update

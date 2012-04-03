@@ -1,28 +1,14 @@
+<% provide(:title, 'People')%>
+
 <% if logged_in? %>
 <div id="navigation">
-	
 <a href="/"><input type="image" src="/stream.png" width="135" height="41"></a>
 <a href="/posts"><input type="image" src="posts.png" width="135" height="41"></a>
 <a href="/meetups"><input type="image" src="/meetups.png" width="135" height="41"></a>
 <a href="/chat"><input type="image" src="/chat.png" width="135" height="41"></a>
 <a href="/groups"><input type="image" src="/groups.png" width="135" height="41"></a>
-<% provide(:title, @user.name) %>
-
-	      <h1>
-	         
-			<%= gravatar_for @user %>
-	        <%= @user.name %>
-	      </h1>
-	
-	<%= link_to "Wall" %>
-	<%= link_to "Web" %>
-	<a href="/profile/info">Info</a>
-	<%= link_to "Photos" %>
-	
-	</div>
+</div>
 <% else %>
-
-<% provide(:title, 'Profile')%>
 
 <div id="navigation">	
 		<div id="streambutton"><a href="/"><input type="image" src="/blank.png" width="135" height="41"></a></div>
@@ -30,8 +16,8 @@
 		<div id="meetupsbutton"><a href="/meetups"><input type="image" src="/blank.png" width="135" height="41"></a></div>
 		<div id="chatbutton"><a href="/chat"><input type="image" src="/blank.png" width="135" height="41"></a></div>
 		<div id="groupsbutton"><a href="/groups"><input type="image" src="/blank.png" width="135" height="41"></a></div>
-		<div id="peoplebutton"><a href="/web"><input type="image" src="/blank.png" width="135" height="41"></a></div>
-		<div class="origin"><a href="/profile"><input type="image" src="/profilelime.png" width="135" height="41"></a></div>
+		<div class="origin"><a href="/web"><input type="image" src="/weblime.png" width="135" height="41"></a></div>
+		<div id="profilebutton"><a href="/profile"><input type="image" src="/blank.png" width="135" height="41"></a></div>
 		</div>
 		
-<% end %>		
+		<% end %>

@@ -23,7 +23,7 @@ class StaticPagesController < ApplicationController
   def groups
   end
   
-  def people
+  def web
   end
   
   def profile

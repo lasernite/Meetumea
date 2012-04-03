@@ -225,16 +225,17 @@ background-image: url(/chatlime.png);
 	background-image: url(/groupslime.png);
 }
 	
+	/* IS ACTUALLY WEB CSS */
 	#peoplebutton {
 	float:left;
 	display: block;
 	width: 135px;
 	height:41px;
-	background-image: url(/people.png);
+	background-image: url(/web.png);
 }
 
 #peoplebutton:hover {
-background-image: url(/peoplelime.png);
+background-image: url(/weblime.png);
 }
 	
 	#profilebutton {
