@@ -1,12 +1,66 @@
-/* Logged In Header */
+								/* Logged In Header */
 
 #logoutbutton {
+margin-left: 900px;
+position: relative;
+bottom: 20px;
+}
 
-	margin-left:300px;
+#search {
+	margin-left: 20px;
+	margin-top:9px;
+	float:left;
+}
+
+#searchfield {
+	float:left;
+}
+
+#searchbutton {
+    float:left;
+	left:5px;
+    top:6px;
+position: relative;
 }
 
 
+#meetumehead {
+font-size: 40px;
+margin-left:20px;
+color: #FFF;
+font-family: myriad pro;
+float:left;
+margin-top:6px;
+}
 
+#settings {
+	float:left;
+	left:20px;
+	top:12px;
+	position:relative;
+}
+
+#messages {
+	float:left;
+	left:24px;
+	top:12px;
+	position:relative;
+}
+
+#activity {
+float:left;
+left:28px;
+top:12px;
+position:relative;
+}
+
+#profile {
+left:32px;
+top:12px;
+position:relative;
+}
+
+									/* Everything Else */
 
 #heading {
 	background-color: #2374ee;
@@ -19,6 +73,7 @@
 	#meetume {
 	font-size: 40px;
 	margin-left:20px;
+	margin-top:6px;
 	color: #FFF;
 	font-family: myriad pro;
 }
