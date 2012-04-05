@@ -12,18 +12,21 @@
 </div>
 	</div>
 	
+	
 	<% provide(:title, @user.name) %>
 
-		      <h1>
+		      
 
-				<%= gravatar_for @user %>
-		        <%= @user.name %>
-		      </h1>
-
+				<div id="profilepic"><%= gravatar_for @user %></div>
+		       <div id="profilename"><h1> <%= @user.name %></h1></div>
+		    <br/>
+		
 		<%= link_to "Wall" %>
-		<%= link_to "Web" %>
+		<%= link_to "Web", users_path %>
 		<a href="/profile/info">Info</a>
 		<%= link_to "Photos" %>
+		
+	</div>
 	
 
 <% else %>
