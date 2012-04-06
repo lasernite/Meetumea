@@ -28,6 +28,7 @@ class StaticPagesController < ApplicationController
   
   def profile
     @user = User.find_by_remember_token(cookies[:remember_token])
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
   
 end

@@ -1,6 +1,7 @@
 Meetumea::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
   
   match '/users', to: "users#index"
   match '/profile/info', to: "users#info"
