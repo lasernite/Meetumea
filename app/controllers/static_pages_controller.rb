@@ -1,10 +1,4 @@
 class StaticPagesController < ApplicationController
-  before_filter :location
-  
-  def location
-    @city = request.location.city
-    @state = request.location.state
-  end
   
   def home
   end

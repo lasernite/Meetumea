@@ -1,11 +1,4 @@
 class LocationsController < ApplicationController
-    before_filter :location
-    
-    def location
-      @city = request.location.city
-      @state = request.location.state
-    end
-    
   def index
     @locations = Location.all
   end
