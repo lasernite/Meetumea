@@ -1,6 +1,6 @@
-class LayoutsController < ApplicationController
+class LayoutsControllers < ApplicationController
   
-  def location
+  def _location
     @city = request.location.city
     @state = request.location.state
-  end
+          end
