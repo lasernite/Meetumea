@@ -1,5 +1,4 @@
 class StaticPagesController < ApplicationController
-  before_filter :location
   
   def home
   end
@@ -32,12 +31,4 @@ class StaticPagesController < ApplicationController
     @user = User.find_by_remember_token(cookies[:remember_token])
     @microposts = @user.microposts.paginate(page: params[:page])
   end
-  
-  
-      private
-      
-      def location
-        @city = request.location.city
-        @state = request.location.state
-      end
 end

@@ -1,7 +1,5 @@
 class LocationsController < ApplicationController
-  before_filter :location
-  
-  
+    
   def index
     @locations = Location.all
     @ip = request.remote_ip
@@ -42,11 +40,4 @@ class LocationsController < ApplicationController
     @location.destroy
     redirect_to locations_url, :notice => "Successfully destroyed location."
   end
-  
-    private
-  
-    def location
-      @city = request.location.city
-      @state = request.location.state
-    end
   end
