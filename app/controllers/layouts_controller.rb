@@ -1,4 +1,4 @@
-class LayoutsControllers < ApplicationController
+class LayoutsController < ApplicationController
   
   def _location
     @city = request.location.city
