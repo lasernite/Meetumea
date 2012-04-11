@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  before_filter :location
+  
   def home
   end
 
@@ -31,4 +33,11 @@ class StaticPagesController < ApplicationController
     @microposts = @user.microposts.paginate(page: params[:page])
   end
   
+  
+      private
+      
+      def location
+        @city = request.location.city
+        @state = request.location.state
+      end
 end
