@@ -28,7 +28,7 @@
 			
 	<div id="meetume"><%= link_to "Meetume", root_path %></div>
 	
-	<div id="city"><%= @city %>, <%= @state %></div>
+	<div id="city"><%= render "layouts/location" %></div>
 	
 	<div id="login">
 	  <%= form_for(:session, :url => sessions_path) do |f| %>
