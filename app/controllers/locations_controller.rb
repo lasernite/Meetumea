@@ -6,6 +6,7 @@ class LocationsController < ApplicationController
     @locations = Location.all
     @ip = request.remote_ip
     @city = request.location.city
+    @state = request.location.state
   end
 
   def show
