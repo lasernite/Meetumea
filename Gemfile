@@ -39,3 +39,15 @@ end
 group :production do
   gem 'pg', '0.12.2'
 end
+
+
+#Nifty Scaffold
+
+gem 'nifty-generators', :group => :development
+
+# Location - Geocoder
+
+gem 'geocoder'
+
+
+gem "mocha", :group => :test
