@@ -2,7 +2,7 @@
 <h1>Update your profile</h1>
 
   <%= form_for(@user) do |f| %>
-      <%= render 'shared/error_messages', :object => f.object %>
+      <%= render 'shared/error_messages', object: f.object %>
 
       <%= gravatar_for @user %>
     <a href="http://gravatar.com/emails">change</a>

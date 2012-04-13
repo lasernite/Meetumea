@@ -28,6 +28,8 @@
 		
 	</div>
 	
+	<%= render 'shared/micropost_form' %>
+	
 	<% if @user.microposts.any? %>
 	      <h3>Microposts (<%= @user.microposts.count %>)</h3>
 	      <ol class="microposts">
